@@ -20,62 +20,231 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
       rel="stylesheet"
     />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./script/css/idx.css" />
   </head>
   <body>
-    <!-- nav-area -->
+    <header>
+      <!-- nav-area -->
+      <nav
+        class="navbar navbar-expand-xl fixed-top"
+        data-bs-theme="dark"
+        id="navbar"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand ms-lg-5 scaleAnim" href="#">
+            <img
+              src="./media/img/logo.png"
+              alt="E CELL GEHU"
+              width="100"
+              height="30"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                E CELL GEHU
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item underline-hover">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item underline-hover">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item underline-hover dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Events
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">E1</a></li>
+                    <li><a class="dropdown-item" href="#">E2</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">E3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item underline-hover">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item underline-hover">
+                  <a class="nav-link" href="#">Join E-Cell</a>
+                </li>
+                <li class="nav-item underline-hover">
+                  <a class="nav-link" href="#">Partners</a>
+                </li>
+                <li class="nav-item dropdown me-lg-5">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="./media/img/2.webp"
+                      class="rounded-circle scaleAnim"
+                      height="30"
+                      alt="User Avatar"
+                      loading="lazy"
+                    />
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">My Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Logout</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- <li class="nav-item">
+                <a class="nav-item btn" href="#" id="loginBtn"> LOGIN </a>
+              </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- /nav-area -->
+      <!-- notifications -->
+      <div
+        class="alert alert-warning alert-dismissible fade show index-alert position-fixed"
+        role="alert"
+      >
+        <div>Example alert, Hellooo <i class="fa-solid fa-heart"></i></div>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+      <!-- /notifications -->
+      <!-- hero-section -->
 
-
-
-
-    <!-- /nav-area -->
-
-    <!-- hero-section -->
-
-    
-
-    
-    <!-- /hero-section -->
-
+      <section class="container-fluid hero-area d-flex align-items-center mb-5">
+        <div class="container-fluid">
+          <div class="row pt-5">
+            <div
+              class="col-lg-6 col-12 mt-5 d-flex align-items-center justify-content-center"
+            >
+              <div class="hero-content ms-lg-4 ms-1">
+                <h1 class="hero-title">
+                  Empower. <br />Innovate. <br />
+                  Serve.
+                </h1>
+                <p class="hero-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam, voluptatum. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Quibusdam, voluptatum.
+                </p>
+                <div class="hero-btns">
+                  <a href="#" class="btn btn-lg me-2 mt-2" id="hero-btn1"
+                    >Join E-Cell</a
+                  >
+                  <a href="#" class="btn btn-lg mt-2" id="hero-btn2"
+                    >Our Events</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 mt-5 d-flex align-items-end">
+              <div class="hero-img">
+                <img
+                  src="./media/img/home-page.png"
+                  class="img img-fluid"
+                  id="home-img"
+                  alt="hero-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /hero-section -->
+    </header>
     <!-- about-section -->
 
-    
 
-    
+
+
     <!-- /about-section -->
 
     <!-- Events-section -->
 
-    
 
-    
+
+
     <!-- /Events-section -->
 
     <!-- Blog-section -->
 
-    
 
-    
+
+
+
     <!-- /Blog-section -->
 
     <!-- Join E-Cell-section -->
 
-    
 
-    
+
+
+
     <!-- /Join E-Cell-section -->
 
     <!-- Partners-section -->
 
-    
 
-    
+
+
+
     <!-- /Partners-section -->
 
     <!-- Contact-section -->
 
-    
 
-    
+
+
+
     <!-- /Contact-section -->
 
     <!-- footer-area -->
@@ -130,14 +299,13 @@
       </footer>
   </section>
 
-    
+
     <!-- /footer-area -->
 
     <!-- JavaScript -->
     <!-- if you require external which is not already included here then you can include it here. Add your section in a comment and then include it here. -->
+    <script src="./script/js/idx.js"></script>
 
-
-    
     <!-- fontAwesome js -->
     <script
       src="https://kit.fontawesome.com/2921d7a147.js"
