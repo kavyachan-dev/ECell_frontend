@@ -1,0 +1,31 @@
+#footer {
+    width: 100%;
+    position: absolute;
+    /* bottom: 0; */
+    border-top-left-radius: 10rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    background: rgb(255, 153, 74);
+    background: linear-gradient(90deg, rgba(255, 153, 74, 1) 0%, rgba(255, 210, 159, 0.9445028011204482) 100%);
+}
+
+#footer h3 {
+    color: #222831;
+}
+
+#footer h5 {
+    color: #393E46;
+}
+
+#footer li {
+    list-style: none;
+}
+
+#footer a {
+    color: #393E46;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #F96D00;
+}
